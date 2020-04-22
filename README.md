@@ -47,7 +47,7 @@ rails generate migration add_email_to_users email:string
 rename_column :table, :old_column, :new_column
 
 # Joins
-@vendors = Vendor.select("*").joins(:products)
+products = Product.joins(:types)
 
 # update column type to datetime - rails g migration change_date_string_to_datetime
 def change

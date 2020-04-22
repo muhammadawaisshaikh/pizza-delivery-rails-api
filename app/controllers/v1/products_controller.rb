@@ -1,7 +1,7 @@
 class V1::ProductsController < ApplicationController
 
   def index
-    products = Product.all
+    products = Product.joins(:types)
     render json: { products: products }, status: :ok
   end
 
