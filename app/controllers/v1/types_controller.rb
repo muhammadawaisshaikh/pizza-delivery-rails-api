@@ -38,7 +38,7 @@ class V1::TypesController < ApplicationController
   private
   
   def type_params
-    params.require(:type).permit(:name, :description, :image)
+    params.require(:type).permit(:name, :amount, :product_id)
   end
 
 end

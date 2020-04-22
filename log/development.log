@@ -202,3 +202,152 @@ Processing by V1::TypesController#index as HTML
 Completed 200 OK in 10ms (Views: 2.8ms | ActiveRecord: 2.5ms)
 
 
+Started GET "/v1/products" for ::1 at 2020-04-22 22:12:12 +0500
+Processing by V1::ProductsController#index as HTML
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/v1/products_controller.rb:5
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/v1/products" for ::1 at 2020-04-22 22:12:20 +0500
+Processing by V1::ProductsController#index as */*
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/v1/products_controller.rb:5
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/v1/products" for ::1 at 2020-04-22 22:19:34 +0500
+Processing by V1::ProductsController#create as */*
+  Parameters: {"name"=>"Chicken Tikka", "description"=>"A specially developed recipe for Pakistan topped with spicy chicken tikka & onions.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/110-1584432910-chicken-tikka.jpg", "product"=>{"name"=>"Chicken Tikka", "description"=>"A specially developed recipe for Pakistan topped with spicy chicken tikka & onions.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/110-1584432910-chicken-tikka.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Chicken Tikka"], ["description", "A specially developed recipe for Pakistan topped with spicy chicken tikka & onions."], ["image", "https://ph-web-bucket.storage.googleapis.com/img/products/images/110-1584432910-chicken-tikka.jpg"], ["created_at", "2020-04-22 17:19:34.181121"], ["updated_at", "2020-04-22 17:19:34.181121"]]
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[35m (25.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+Completed 201 Created in 37ms (Views: 0.4ms | ActiveRecord: 27.8ms)
+
+
+Started POST "/v1/products" for ::1 at 2020-04-22 22:20:06 +0500
+Processing by V1::ProductsController#create as */*
+  Parameters: {"name"=>"Chicken Fajita", "description"=>"Special marinated chicken, onions, green peppers with special herbs and spices.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/130-1584448058-Chicken-Fajita.jpg", "product"=>{"name"=>"Chicken Fajita", "description"=>"Special marinated chicken, onions, green peppers with special herbs and spices.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/130-1584448058-Chicken-Fajita.jpg"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[36mProduct Create (0.2ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Chicken Fajita"], ["description", "Special marinated chicken, onions, green peppers with special herbs and spices."], ["image", "https://ph-web-bucket.storage.googleapis.com/img/products/images/130-1584448058-Chicken-Fajita.jpg"], ["created_at", "2020-04-22 17:20:06.116475"], ["updated_at", "2020-04-22 17:20:06.116475"]]
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[35m (49.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+Completed 201 Created in 52ms (Views: 0.4ms | ActiveRecord: 50.0ms)
+
+
+Started POST "/v1/products" for ::1 at 2020-04-22 22:20:32 +0500
+Processing by V1::ProductsController#create as */*
+  Parameters: {"name"=>"Cheese Lover", "description"=>"Go back to where it all began with classic mozzarella cheese & tomato base.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/142-1584005093-Cheese-Lover.jpg", "product"=>{"name"=>"Cheese Lover", "description"=>"Go back to where it all began with classic mozzarella cheese & tomato base.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/142-1584005093-Cheese-Lover.jpg"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[36mProduct Create (0.2ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Cheese Lover"], ["description", "Go back to where it all began with classic mozzarella cheese & tomato base."], ["image", "https://ph-web-bucket.storage.googleapis.com/img/products/images/142-1584005093-Cheese-Lover.jpg"], ["created_at", "2020-04-22 17:20:32.479675"], ["updated_at", "2020-04-22 17:20:32.479675"]]
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[35m (50.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+Completed 201 Created in 54ms (Views: 0.9ms | ActiveRecord: 51.2ms)
+
+
+Started GET "/v1/products" for ::1 at 2020-04-22 22:21:38 +0500
+Processing by V1::ProductsController#index as HTML
+  [1m[36mProduct Load (3.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/v1/products_controller.rb:5
+Completed 200 OK in 47ms (Views: 42.7ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/v1/products" for ::1 at 2020-04-22 22:22:00 +0500
+Processing by V1::ProductsController#create as */*
+  Parameters: {"name"=>"Very Veggie", "description"=>"A colorful medley of tomatoes, onions, mushrooms, black olives, and green peppers.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/15-1584447916-Very-Veggie.jpg", "product"=>{"name"=>"Very Veggie", "description"=>"A colorful medley of tomatoes, onions, mushrooms, black olives, and green peppers.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/15-1584447916-Very-Veggie.jpg"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Very Veggie"], ["description", "A colorful medley of tomatoes, onions, mushrooms, black olives, and green peppers."], ["image", "https://ph-web-bucket.storage.googleapis.com/img/products/images/15-1584447916-Very-Veggie.jpg"], ["created_at", "2020-04-22 17:22:00.947242"], ["updated_at", "2020-04-22 17:22:00.947242"]]
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[35m (56.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+Completed 201 Created in 59ms (Views: 0.4ms | ActiveRecord: 56.6ms)
+
+
+Started POST "/v1/products" for ::1 at 2020-04-22 22:22:37 +0500
+Processing by V1::ProductsController#create as */*
+  Parameters: {"name"=>"Chicken Tikka Supreme", "description"=>"Our world-famous flavor made even better with diced tomatoes and creamy ranch sauce.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/101-1584448009-Chicken-Tikka-Supreme.jpg", "product"=>{"name"=>"Chicken Tikka Supreme", "description"=>"Our world-famous flavor made even better with diced tomatoes and creamy ranch sauce.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/101-1584448009-Chicken-Tikka-Supreme.jpg"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[36mProduct Create (0.2ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Chicken Tikka Supreme"], ["description", "Our world-famous flavor made even better with diced tomatoes and creamy ranch sauce."], ["image", "https://ph-web-bucket.storage.googleapis.com/img/products/images/101-1584448009-Chicken-Tikka-Supreme.jpg"], ["created_at", "2020-04-22 17:22:37.093142"], ["updated_at", "2020-04-22 17:22:37.093142"]]
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[35m (30.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+Completed 201 Created in 34ms (Views: 0.8ms | ActiveRecord: 30.5ms)
+
+
+Started POST "/v1/products" for ::1 at 2020-04-22 22:23:06 +0500
+Processing by V1::ProductsController#create as */*
+  Parameters: {"name"=>"Chicken Fajita Supreme", "description"=>"Scrumptious pieces of fajita chicken, fresh vegetables and lots of cheese.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/121-1584448034-Chicken-Fajita-Surpeme.jpg", "product"=>{"name"=>"Chicken Fajita Supreme", "description"=>"Scrumptious pieces of fajita chicken, fresh vegetables and lots of cheese.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/121-1584448034-Chicken-Fajita-Surpeme.jpg"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Chicken Fajita Supreme"], ["description", "Scrumptious pieces of fajita chicken, fresh vegetables and lots of cheese."], ["image", "https://ph-web-bucket.storage.googleapis.com/img/products/images/121-1584448034-Chicken-Fajita-Surpeme.jpg"], ["created_at", "2020-04-22 17:23:06.538081"], ["updated_at", "2020-04-22 17:23:06.538081"]]
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[35m (39.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+Completed 201 Created in 42ms (Views: 0.7ms | ActiveRecord: 39.7ms)
+
+
+Started POST "/v1/products" for ::1 at 2020-04-22 22:23:49 +0500
+Processing by V1::ProductsController#create as */*
+  Parameters: {"name"=>"Chilli Chicken", "description"=>"Fire up your taste buds with spicy chicken chunks, onions, olives, jalapenos and hot peri sauce.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/92-1584447986-Chilli-Chicken.jpg", "product"=>{"name"=>"Chilli Chicken", "description"=>"Fire up your taste buds with spicy chicken chunks, onions, olives, jalapenos and hot peri sauce.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/92-1584447986-Chilli-Chicken.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[36mProduct Create (1.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Chilli Chicken"], ["description", "Fire up your taste buds with spicy chicken chunks, onions, olives, jalapenos and hot peri sauce."], ["image", "https://ph-web-bucket.storage.googleapis.com/img/products/images/92-1584447986-Chilli-Chicken.jpg"], ["created_at", "2020-04-22 17:23:49.119895"], ["updated_at", "2020-04-22 17:23:49.119895"]]
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[35m (66.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+Completed 201 Created in 72ms (Views: 1.0ms | ActiveRecord: 68.0ms)
+
+
+Started POST "/v1/products" for ::1 at 2020-04-22 22:24:19 +0500
+Processing by V1::ProductsController#create as */*
+  Parameters: {"name"=>"Creamy Melt", "description"=>"Creamy goodness with spicy chicken chunks, onions and bell pepper for your taste buds.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/73-1584103352-Creamy-Melt.jpg", "product"=>{"name"=>"Creamy Melt", "description"=>"Creamy goodness with spicy chicken chunks, onions and bell pepper for your taste buds.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/73-1584103352-Creamy-Melt.jpg"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Creamy Melt"], ["description", "Creamy goodness with spicy chicken chunks, onions and bell pepper for your taste buds."], ["image", "https://ph-web-bucket.storage.googleapis.com/img/products/images/73-1584103352-Creamy-Melt.jpg"], ["created_at", "2020-04-22 17:24:19.626570"], ["updated_at", "2020-04-22 17:24:19.626570"]]
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[35m (55.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+Completed 201 Created in 58ms (Views: 0.5ms | ActiveRecord: 55.6ms)
+
+
+Started POST "/v1/products" for ::1 at 2020-04-22 22:24:53 +0500
+Processing by V1::ProductsController#create as */*
+  Parameters: {"name"=>"Chicken Supreme", "description"=>"Spicy chicken, chicken fajita, smoked chicken, onions, green peppers, olives and mushrooms.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/151-1584103085-Chicken-Supreme.jpg", "product"=>{"name"=>"Chicken Supreme", "description"=>"Spicy chicken, chicken fajita, smoked chicken, onions, green peppers, olives and mushrooms.", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/151-1584103085-Chicken-Supreme.jpg"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Chicken Supreme"], ["description", "Spicy chicken, chicken fajita, smoked chicken, onions, green peppers, olives and mushrooms."], ["image", "https://ph-web-bucket.storage.googleapis.com/img/products/images/151-1584103085-Chicken-Supreme.jpg"], ["created_at", "2020-04-22 17:24:53.376652"], ["updated_at", "2020-04-22 17:24:53.376652"]]
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[35m (21.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+Completed 201 Created in 25ms (Views: 0.4ms | ActiveRecord: 21.9ms)
+
+
+Started POST "/v1/products" for ::1 at 2020-04-22 22:25:30 +0500
+Processing by V1::ProductsController#create as */*
+  Parameters: {"name"=>"Super Sicilian", "description"=>"Tantalizing blend of spices with fajita chicken, onions, capsicum, jalapenos and fiery peri drizzle", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/28-1584004666-Super-Sicilian.jpg", "product"=>{"name"=>"Super Sicilian", "description"=>"Tantalizing blend of spices with fajita chicken, onions, capsicum, jalapenos and fiery peri drizzle", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/28-1584004666-Super-Sicilian.jpg"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Super Sicilian"], ["description", "Tantalizing blend of spices with fajita chicken, onions, capsicum, jalapenos and fiery peri drizzle"], ["image", "https://ph-web-bucket.storage.googleapis.com/img/products/images/28-1584004666-Super-Sicilian.jpg"], ["created_at", "2020-04-22 17:25:30.771655"], ["updated_at", "2020-04-22 17:25:30.771655"]]
+  ↳ app/controllers/v1/products_controller.rb:11
+  [1m[35m (44.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/v1/products_controller.rb:11
+Completed 201 Created in 47ms (Views: 0.3ms | ActiveRecord: 44.6ms)
+
+
+Started GET "/v1/types" for ::1 at 2020-04-22 22:25:39 +0500
+Processing by V1::TypesController#index as */*
+  Parameters: {"name"=>"Super Sicilian", "description"=>"Tantalizing blend of spices with fajita chicken, onions, capsicum, jalapenos and fiery peri drizzle", "image"=>"https://ph-web-bucket.storage.googleapis.com/img/products/images/28-1584004666-Super-Sicilian.jpg", "type"=>{"name"=>"Super Sicilian"}}
+  [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  ↳ app/controllers/v1/types_controller.rb:5
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
